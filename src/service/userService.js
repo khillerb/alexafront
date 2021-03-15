@@ -1,5 +1,5 @@
 import axios from 'axios';
-const endpoint = 'https://52.254.93.227:8443/api/user/';
+const endpoint = 'http://52.254.93.227:8080/api/user/';
 
 export default {
     getUsers,

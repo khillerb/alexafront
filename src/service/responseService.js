@@ -1,5 +1,5 @@
 import axios from 'axios';
-const endpoint = 'https://52.254.93.227:8443/api/responses/';
+const endpoint = 'http://52.254.93.227:8080/api/responses/';
 
 export default {
     updateResponse,
