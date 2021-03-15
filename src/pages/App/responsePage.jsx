@@ -7,8 +7,8 @@ const ResponsePage = (props) => {
   const [change, setChange] = useState({});
   useEffect(()=>{
     responseService.getResponses().then(res => {
+      console.log(res)
       setResponses(res.data)
-      console.log(res.data)
     })
   }, [props, change])
   

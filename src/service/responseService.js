@@ -1,5 +1,5 @@
 import axios from 'axios';
-const endpoint = 'http://52.254.93.227/api/responses/';
+const endpoint = 'https://52.254.93.227:8443/api/responses/';
 
 export default {
     updateResponse,
@@ -18,11 +18,7 @@ function getResponses () {
             'Content-Type': 'application/json;charset=UTF-8'
         }
     };
-    return axios(options).then(response => {
-        return response;
-    }, (error) => {
-        console.log(error);
-    });
+    return axios(options).then();
 }
 function getResponseById (id) {
     const options = {
